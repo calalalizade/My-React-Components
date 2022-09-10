@@ -1,6 +1,6 @@
 import { React, useState, useEffect, useRef } from "react";
 
-function CountUp({ duration, number }) {
+function CountUpOnScroll({ duration, number }) {
   const [num, setNum] = useState(0);
   const [isElementVisible, setIsElementVisible] = useState();
   const myRef = useRef();
@@ -27,4 +27,4 @@ function CountUp({ duration, number }) {
   return <span ref={myRef}>{isElementVisible && num}</span>;
 }
 
-export default CountUp;
+export default CountUpOnScroll;
